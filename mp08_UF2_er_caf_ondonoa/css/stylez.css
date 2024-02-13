@@ -1,0 +1,164 @@
+@charset "UTF-8";
+/* CSS Document */
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html, body{
+    height: 1589px;
+}
+
+body{
+    background-color: ivory;
+    background: linear-gradient(to bottom left, pink 50%, ivory 50%); 
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 1589px;  
+    position: relative; 
+    font-family: helvetica, Arial, sans-serif;
+    color: black;
+}
+
+span{
+    color: grey;
+}
+
+.contenidor{
+    width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+h1{
+    font-size: 4rem;
+    text-align: center;
+    padding-top: 2rem;
+}
+
+.cap, .cos, .peu{
+    width: 100%;
+}
+
+.cap{
+    height: 589px;
+    /*background-image: url("../img/ani/");*/
+    animation-name: fondocap;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes fondocap{
+    0%{
+        background-image: url("../img/ani/back.png");
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+    12.5%{
+        background-size: 100%;
+        background-image: url("../img/ani/bean.png");
+        background-repeat: no-repeat;
+    }
+    25%{
+        background-size: 100%;
+        background-image: url("../img/ani/bond.png");
+        background-repeat: no-repeat;
+    }
+    37.5%{
+        background-size: 100%;
+        background-image: url("../img/ani/break.png");
+        background-repeat: no-repeat;
+    }
+    50%{
+        background-size: 100%;
+        background-image: url("../img/ani/ghost.png");
+        background-repeat: no-repeat;
+    }
+    62.5%
+    {
+        background-size: 100%;
+        background-image: url("../img/ani/pulp.png");
+        background-repeat: no-repeat;
+    }
+    75%{
+        background-repeat: no-repeat;
+        background-size: 100%; 
+       background-image: url("../img/ani/rider.png");
+    }
+    87.5%
+    {
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-image: url("../img/ani/taxi.png");
+    }
+    100%{
+        background-repeat: no-repeat;
+        background-size: 100%; 
+       background-image: url("../img/ani/team.png");
+    }
+}
+
+.cos{
+    top: 50%;
+    height: 780px;
+    padding: 10px 0;
+    float: left;
+    width: 100%;
+}
+
+.peu{
+    height: 220px;
+    text-align: center;
+}
+
+.caixa{
+    height: 240px;
+    background-color: white;
+    width: 293px;
+    float: left;
+    margin: 10px;
+    overflow: hidden; 
+    transition: transform 0.3s ease 0s;
+    filter: opacity(50%);
+}
+
+.text{
+    height: 40px;
+    width: 100%;
+}
+
+p{
+    font-size: 1rem;
+    position: relative;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.imatge{
+    height: 200px;
+    width: 100%;
+}
+
+.imatge img{
+    height: auto;
+    width: 100%;
+}
+
+
+.caixa:hover{
+    filter: opacity(100%);
+    transform:rotate(360deg);
+}
+
+@media screen and (max-width: 940px) {
+    .contenidor{
+        width: 100%;
+    }
+
+    .cap{
+        background-image: 100%;
+    }
+}
